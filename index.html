@@ -19,10 +19,11 @@
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="vendor/devicon-master/css/devicon.min.css" rel="stylesheet">
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+  
 
   <!-- Custom styles for this template -->
   <link href="css/resume.css" rel="stylesheet">
-
+  
 </head>
 
 <body id="page-top">
@@ -61,7 +62,7 @@
 
   <div class="container-fluid p-0" id="fullpage">
     <section class="section" id="about">
-    <section class="resume-section p-3 p-lg-5 d-flex d-column">
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column">
       <div class="my-auto">
         <h1 class="mb-0">Breno
           <span class="text-primary">Nunes</span>
@@ -96,7 +97,7 @@
     </section>
     </section>
     
-    <section class="section" id="experience">
+    <section class="section" id="experience">    
     <section class="resume-section p-3 p-lg-5 d-flex flex-column">
       <div class="my-auto">
         <h2 class="mb-5">Experience</h2>
@@ -131,7 +132,6 @@
         </div>
 
       </div>
-
     </section>
     </section>
     
@@ -152,7 +152,7 @@
           </div>
         </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row">
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Centro Universitário Estácio da Bahia</h3>
             <div class="subheading mb-3">Software Engineering</div>
@@ -274,14 +274,26 @@
     <section class="resume-section p-3 p-lg-5 d-flex flex-column">
       <div class="my-auto">
         <h2 class="mb-5">Projects</h2>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            https://play.google.com/store/apps/details?id=com.ToBTeam.PersonDefense</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            https://play.google.com/store/apps/details?id=com.QuemSabe.NRSIM</li>
-        </ul>
+        <ul class="list-unstyled">
+            <li class="media">
+                <a href="https://play.google.com/store/apps/details?id=com.QuemSabe.NRSIM" target="_blank">
+                  <img src="./img/nr-sim.png" alt="NR-SIM" class="mr-3" style="width: 20%"/>
+                  <span>NR-SIM</span>
+                </a>
+            </li>
+            <li class="media">
+                <a href="https://play.google.com/store/apps/details?id=com.ToBTeam.PersonDefense" target="_blank">
+                  <img src="./img/person-defense.png" alt="Person Defense" class="mr-3" style="width: 20%"/>
+                  <span>Person Defense</span>
+                </a>
+            </li>
+            <li class="media">
+                <a href="https://brenovit.github.io/dependencies-manager/" target="_blank">
+                  <img src="img/dependency-manager.png" alt="Dependency Manager" class="mr-3" style="width: 20%"/>
+                  <span>Dependency Manager</span>
+                </a>
+            </li>
+        </ul>       
       </div>
     </section>
     </section>
@@ -300,7 +312,16 @@
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
   <script>
-    new fullpage('#fullpage', {licenseKey:null});
+    //new fullpage('#fullpage', {licenseKey:null});
+    var myFullpage = new fullpage('#fullpage', {        
+        //navigation: true,
+        //navigationPosition: 'right',
+        responsiveWidth: 900,
+        afterResponsive: function(isResponsive){
+
+        }
+
+    });
   </script>
 </body>
 
